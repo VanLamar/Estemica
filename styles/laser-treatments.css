@@ -1,0 +1,197 @@
+.sidebar {
+    width: 250px;
+    padding-right: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    background-color: #DED7CA;
+    color: #000;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    font-size: 1.8em;
+    width: 511px;
+    height: 32px;
+}
+
+p {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.treatment-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    width: 316px;
+}
+
+.column h3 {
+    background-color: #e8e7df;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    height: 62px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+}
+.cta {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.call-button {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Skin Laser Treatments section */
+#skin-laser-treatments .treatment-options .column {
+    display: grid;
+    grid-template-columns: repeat(2, 316px);
+    gap: 10px;
+    justify-content: center;
+}
+
+#skin-laser-treatments .treatment-options button {
+    margin-bottom: 2;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding-right: 15px;
+    }
+
+    .sidebar ul {
+        margin-left: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    p {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .treatment-options {
+        flex-direction: column;
+        width: 100%; 
+        align-items: center; 
+    }
+    
+    
+    .column h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px; 
+    }
+    
+    .scroll-buttons {
+        overflow-x: auto; 
+        white-space: nowrap;
+        display: flex;
+        
+    }
+    
+    .scroll-buttons button {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 10px 15px;
+        margin-right: 10px;
+        font-size: 0.8em;
+    }
+    
+    .cta {
+        font-size: 1.2em;
+    }
+
+    /* Skin Laser Treatments section */
+    #skin-laser-treatments .treatment-options {
+        grid-template-columns: 1fr;
+    }
+
+    #skin-laser-treatments .treatment-options {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 0; 
+        margin: 0 -10px; 
+    }
+
+    #skin-laser-treatments button{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 10px 15px;
+        margin-right: 10px;
+        font-size: 0.8em;
+    }
+    
+    #skin-laser-treatments .treatment-options .column {
+        display: block; /* Switch to block layout on small screens */
+    }
+
+}
+

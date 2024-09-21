@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-styles.css">
+    <title>Estemica</title>
+    <link rel="icon" href="img/logo-mobile.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="desktop-menu">
+            <ul class="menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="img/logo-eng.png" alt="Estemica esthetic">
+                    </a>
+                </li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#giftcard">Gift Card</a></li>
+                <li><a href="#product">Products</a></li>
+            </ul>
+        </nav>
+    
+        <nav class="mobile-menu">
+            <div class="mobile-header">
+                <div class="mobile-logo">
+                    <a href="index.html">
+                        <img src="img/logo-mobile.png" alt="Estemica esthetic">
+                    </a>
+                </div>
+                <div class="mobile-menu-content">
+                    <div class="logo-text"> <a href="index.html"><img src="img/english_without_logo.png" alt="Estemica esthetic"></a></div>
+                </div>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    &#9776; <!-- menu symbol -->
+                </div>
+            </div>
+            <div class="mobile-menu-items" id="mobileMenu">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#giftcard">Gift Card</a></li>
+                    <li><a href="#product">Products</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>We'll find<br> a key to your skin</h2>
+                <h1>Our cosmetology clinic in Laval and Montreal providing advanced skin solutions with personalized care and advanced technology.</h1>
+                <button class="book-button">BOOK YOUR EXPERIENCE</button>
+            </div>   
+        </section>
+    </div>          
+    <div class="content-wrapper">     
+        <section class="services" id="services">
+            <h2>OUR SERVICES</h2>
+            <div class="service-grid">
+                <button class="service-item" onclick="window.location.href='pages/laser.html'"><span>Laser</span></button>
+                <button class="service-item" onclick="window.location.href='pages/microneedling.html'"><span>Microneedling</span></button>
+                <button class="service-item" onclick="window.location.href='pages/oxygenating-facial.html'"><span>Oxygenating-facial</span></button>
+                <button class="service-item" onclick="window.location.href='pages/massage.html'"><span>Massage</span></button>
+                <button class="service-item" onclick="window.location.href='pages/acne.html'">Acne</button>
+                <button class="service-item" onclick="window.location.href='pages/rosacea.html'">Rosacea</button>
+                <button class="service-item" onclick="window.location.href='pages/anti-aging.html'">Anti-Aging & Pigmentation</button>
+                <button class="service-item" onclick="window.location.href='pages/facials.html'">Facials</button>
+            </div>
+        </section>
+
+        <section id="promo" class="promotions">
+            <h2>Promotions</h2>
+            <div class="promo-grid">
+                <div class="promo-item">
+                    <h3>Korean facial -20%</h3>
+                    <a href="#booking">Book now</a>
+                </div>
+                <div class="promo-item">
+                    <h3>Buccal massage -15%</h3>
+                    <a href="#booking">Book now</a>
+                </div>
+                <div class="promo-item">
+                    <h3>Laser hair removal -15%</h3>
+                    <a href="#booking">Book now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-us">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact us</h2>
+                    <p><a href="tel:+15146386342">+1(514)638-63-42</a></p>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <p>4935A Sherbrooke St W,</p>
+                        <p>Westmount, H3Z 1H2</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.1545284218583!2d-73.61660908447276!3d45.48534687910139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a0d5889c2b3%3A0x4d9e6c5fd8537fba!2s4935A%20Sherbrooke%20St%20W%2C%20Westmount%2C%20Quebec%20H3Z%201H2%2C%20Canada!5e0!3m2!1sen!2sus!4v1626885435000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

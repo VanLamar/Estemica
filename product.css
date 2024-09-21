@@ -1,0 +1,148 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+
+main h1 {
+    text-align: center;
+    background-color: #DED7CA;
+    padding: 60px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    width: 300px;
+    padding: 30px;
+
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    position: sticky;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+}
+
+aside ul li a:hover {
+    color: #555;
+}
+
+.treatment {
+    background-color: #d2cccc;
+    padding: 8px; 
+    flex-basis: calc(25% - 20px); 
+    text-align: center;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+
+}
+
+section {
+    background-color: #ededed;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 20px; 
+    max-width: 801px; 
+    box-sizing: border-box; 
+    margin-right: 5%;
+}
+
+.treatments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.treatment h3 {
+    margin: 1px;
+
+}
+
+.treatment h3 a {
+    text-decoration: none; 
+    color: inherit; 
+    font-size: inherit;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 352px;
+    height: 85px;
+    margin: 10px;
+    background-color: #DED7CA; 
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b8b0b0; 
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 100%;
+        margin-top: 70px; 
+        padding: 1px;    
+    }
+
+    main h1 {
+        font-size: 18px;
+    }
+
+    .content {
+        flex-direction: column; 
+    }
+
+    aside {
+        display: none; 
+    }
+
+    section {
+        max-width: 100%; 
+        margin-right: 0; 
+    }
+}
